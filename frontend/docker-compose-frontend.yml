@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./  # Путь к папке с фронтендом
+      dockerfile: Dockerfile  # Имя Dockerfile для фронтенда
+    ports:
+      - "3000:3000"  # Проброс порта для доступа к фронтенду
